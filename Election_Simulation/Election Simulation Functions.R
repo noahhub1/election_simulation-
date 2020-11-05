@@ -9,6 +9,7 @@ convert_odds <- function(odds) {
   else{
     prob <- 100/(odds+100)
   }
+  prob
 }
 win_pred <- function(state_odds) {
   wins <- vector("numeric", length(state_odds))
